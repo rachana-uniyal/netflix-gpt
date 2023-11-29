@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
 import { USER_ICON } from '../utils/constants';
+import { BACKGROUND_IMG } from '../utils/constants';
 
 const Login = () => {
     const dispatch = useDispatch()
@@ -66,7 +67,7 @@ const Login = () => {
     <div>
         <Header/>
         <div className='absolute'>
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/a09bb938-2d90-42ae-986e-5a3e4abf9e77/8eb1e781-3494-4aa4-9405-268ca6473e4c/IN-en-20231113-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+            <img src={BACKGROUND_IMG}
             alt="background"/>
         </div>
         <form onSubmit={(e)=> e.preventDefault()}className='absolute p-12 bg-black w-4/12 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80'>
